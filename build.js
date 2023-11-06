@@ -8,7 +8,6 @@ const { createCanvas, loadImage } = require(`canvas`);
 const buildDir = `${basePath}/build`;
 const layersDir = `${basePath}/layers`;
 const filesDir = `${basePath}/files`;
-console.log({buildDir, layersDir})
 const {
   format,
   baseUri,

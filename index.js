@@ -17,6 +17,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+  res.send("Success!");
+});
+
 app.post("/upload", upload.single("zipFile"), async (req, res) => {
   try {
     const collectionDetails = JSON.parse(req.body.collectionDetails);
